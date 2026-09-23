@@ -19,7 +19,7 @@ export default function AboutPage() {
             style={{ aspectRatio: hometown.aspectRatio }}
           >
             <img
-              src={hometown.image}
+              src={`${import.meta.env.BASE_URL}${hometown.image}`}
               alt={hometown.title}
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -42,7 +42,7 @@ export default function AboutPage() {
                 style={{ aspectRatio: section.aspectRatio }}
               >
                 <img
-                  src={section.image}
+                  src={`${import.meta.env.BASE_URL}${section.image}`}
                   alt={section.title}
                   className="absolute inset-0 w-full h-full object-cover"
                 />

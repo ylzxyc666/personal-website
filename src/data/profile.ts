@@ -67,25 +67,25 @@ export const MOCK_PROFILE: IProfile = {
   aboutSections: [
     {
       title: '故乡',
-      image: '/about-hometown.jpg',
+      image: 'about-hometown.jpg',
       text: '江苏常熟，一家四口',
       aspectRatio: '16 / 9',
     },
     {
       title: '篮球',
-      image: '/about-basketball.jpg',
+      image: 'about-basketball.jpg',
       text: '一个业余的后卫，最喜欢的球星是 Stephen Curry',
       aspectRatio: '2 / 3',
     },
     {
       title: '台球',
-      image: '/about-billiards.jpg',
+      image: 'about-billiards.jpg',
       text: '入坑两年，时准时匕首',
       aspectRatio: '3 / 4',
     },
     {
       title: '听音乐',
-      image: '/about-music.jpg',
+      image: 'about-music.jpg',
       text: 'R&B + RAP Lover，最爱听 Jay Chou',
       aspectRatio: '3 / 4',
     },

@@ -6,7 +6,7 @@ export default function BackgroundLayer() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
       <img
-        src="/bg-court.jpg"
+        src={`${import.meta.env.BASE_URL}bg-court.jpg`}
         alt=""
         className="w-full h-full object-cover transition-[filter] duration-700 ease-out"
         style={{ filter: `blur(${blur}px)` }}

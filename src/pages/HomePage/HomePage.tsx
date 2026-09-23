@@ -19,7 +19,7 @@ export default function HomePage() {
       {/* 左下：Curry 图片 */}
       <div className="absolute bottom-4 left-3 md:left-10 w-[85px] md:w-[190px] rounded-lg overflow-hidden shadow-xl z-0">
         <img
-          src="/home-curry.jpg"
+          src={`${import.meta.env.BASE_URL}home-curry.jpg`}
           alt="Stephen Curry"
           className="w-full h-auto object-cover"
         />
@@ -28,7 +28,7 @@ export default function HomePage() {
       {/* 右上：周杰伦图片 */}
       <div className="absolute top-20 right-3 md:right-10 w-[75px] md:w-[160px] rounded-lg overflow-hidden shadow-xl z-0">
         <img
-          src="/home-jay.jpg"
+          src={`${import.meta.env.BASE_URL}home-jay.jpg`}
           alt="周杰伦"
           className="w-full h-auto object-cover"
         />
