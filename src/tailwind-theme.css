@@ -118,7 +118,7 @@
   }
 
   .hover-elevate-2:hover:not(.no-default-hover-elevate)::after,
-  .active-elevate-2:active:not(.no-default-active-elevate)::after {
+  .active-elevate-2:active:not(.no-default-hover-elevate)::after {
     background-color: var(--elevate-2);
   }
 
