@@ -46,9 +46,13 @@ export default function HomePage() {
 
       {/* 中间：原有内容 */}
       <div className="max-w-3xl mx-auto px-6 text-center z-10 py-20 md:py-0">
-        {/* 圆形文字头像 */}
-        <div className="mx-auto mb-6 md:mb-8 size-20 md:size-24 rounded-full bg-foreground text-background flex items-center justify-center text-xl md:text-2xl font-semibold tracking-wider shadow-lg">
-          {MOCK_PROFILE.initials}
+        {/* 圆形头像 */}
+        <div className="mx-auto mb-6 md:mb-8 size-20 md:size-24 rounded-full overflow-hidden shadow-lg ring-2 ring-white/60">
+          <img
+            src={`${import.meta.env.BASE_URL}avatar.jpg`}
+            alt="头像"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* 欢迎语 */}
