@@ -53,7 +53,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
           {rest.map((section, index) => {
             const isMusic = section.title === '听音乐';
             const isBasketball = section.title === '篮球';
@@ -61,7 +61,7 @@ export default function AboutPage() {
 
             if (isBilliards) {
               return (
-                <div key={index} className="flex flex-col gap-6">
+                <div key={index} className="flex flex-col gap-4 sm:gap-6">
                   <div className="rounded-xl overflow-hidden shadow-md bg-white flex flex-col">
                     <div className="relative w-full overflow-hidden" style={{ aspectRatio: section.aspectRatio }}>
                       <img src={`${import.meta.env.BASE_URL}${section.image}`} alt={t('about.billiards', language)} className="absolute inset-0 w-full h-full object-cover" />
@@ -94,7 +94,7 @@ export default function AboutPage() {
 
             if (isBasketball) {
               return (
-                <div key={index} className="flex flex-col gap-6">
+                <div key={index} className="flex flex-col gap-4 sm:gap-6">
                   <div className="rounded-xl overflow-hidden shadow-md bg-white flex flex-col">
                     <div className="relative w-full overflow-hidden" style={{ aspectRatio: section.aspectRatio }}>
                       <img src={`${import.meta.env.BASE_URL}${section.image}`} alt={t('about.basketball', language)} className="absolute inset-0 w-full h-full object-cover" />
@@ -127,7 +127,7 @@ export default function AboutPage() {
 
             if (isMusic) {
               return (
-                <div key={index} className="flex flex-col gap-6">
+                <div key={index} className="flex flex-col gap-4 sm:gap-6">
                   <div className="rounded-xl overflow-hidden shadow-md bg-white flex flex-col">
                     <div className="relative w-full overflow-hidden" style={{ aspectRatio: section.aspectRatio }}>
                       <img src={`${import.meta.env.BASE_URL}${section.image}`} alt={t('about.music', language)} className="absolute inset-0 w-full h-full object-cover" />

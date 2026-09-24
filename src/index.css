@@ -6,88 +6,48 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
-/* 顶部导航栏从顶端向下滑入 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active, a:active {
+  opacity: 0.85;
+}
+
 @keyframes slide-down-in {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
-/* 页面内容从下方向上滑入 */
 @keyframes slide-up-in {
-  from {
-    transform: translateY(36px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(36px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
-/* 页面切换：向左滑出（加速离开） */
 @keyframes slide-out-left {
-  from {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(-100%); opacity: 0; }
 }
 
-/* 页面切换：向右滑出（加速离开） */
 @keyframes slide-out-right {
-  from {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(100%);
-    opacity: 0;
-  }
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
 }
 
-/* 页面切换：从左滑入（减速进入） */
 @keyframes slide-in-left {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
-/* 页面切换：从右滑入（减速进入） */
 @keyframes slide-in-right {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
-/* 提交成功 toast 弹出 */
 @keyframes toast-in {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }

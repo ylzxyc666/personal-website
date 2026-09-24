@@ -16,26 +16,26 @@ export default function EducationPage() {
         <h3 className="text-base font-semibold text-foreground/80 mb-4">{t('education.educationTitle', language)}</h3>
 
         <div className="bg-white rounded-xl shadow-md p-4 md:p-6 mb-5">
-          <div className="space-y-3">
-            <div className="flex gap-4">
-              <span className="text-muted-foreground min-w-[80px] shrink-0">{language === 'zh' ? '学校' : 'School'}</span>
-              <span className="text-foreground">{t('education.school', language)}</span>
+          <div className="space-y-2.5 sm:space-y-3">
+            <div className="flex gap-2 sm:gap-4">
+              <span className="text-muted-foreground min-w-[64px] sm:min-w-[80px] shrink-0 text-xs sm:text-sm">{language === 'zh' ? '学校' : 'School'}</span>
+              <span className="text-foreground text-xs sm:text-sm">{t('education.school', language)}</span>
             </div>
-            <div className="flex gap-4">
-              <span className="text-muted-foreground min-w-[80px] shrink-0">{language === 'zh' ? '专业' : 'Major'}</span>
-              <span className="text-foreground">{t('education.major', language)}</span>
+            <div className="flex gap-2 sm:gap-4">
+              <span className="text-muted-foreground min-w-[64px] sm:min-w-[80px] shrink-0 text-xs sm:text-sm">{language === 'zh' ? '专业' : 'Major'}</span>
+              <span className="text-foreground text-xs sm:text-sm">{t('education.major', language)}</span>
             </div>
-            <div className="flex gap-4">
-              <span className="text-muted-foreground min-w-[80px] shrink-0">{t('education.enrollment', language)}</span>
-              <span className="text-foreground">{t('education.enrollmentDate', language)}</span>
+            <div className="flex gap-2 sm:gap-4">
+              <span className="text-muted-foreground min-w-[64px] sm:min-w-[80px] shrink-0 text-xs sm:text-sm">{t('education.enrollment', language)}</span>
+              <span className="text-foreground text-xs sm:text-sm">{t('education.enrollmentDate', language)}</span>
             </div>
-            <div className="flex gap-4">
-              <span className="text-muted-foreground min-w-[80px] shrink-0">{language === 'zh' ? '年级' : 'Grade'}</span>
-              <span className="text-foreground">{t('education.grade', language)}</span>
+            <div className="flex gap-2 sm:gap-4">
+              <span className="text-muted-foreground min-w-[64px] sm:min-w-[80px] shrink-0 text-xs sm:text-sm">{language === 'zh' ? '年级' : 'Grade'}</span>
+              <span className="text-foreground text-xs sm:text-sm">{t('education.grade', language)}</span>
             </div>
-            <div className="flex gap-4">
-              <span className="text-muted-foreground min-w-[80px] shrink-0">{language === 'zh' ? '实习经历' : 'Internship'}</span>
-              <span className="text-foreground">{t('education.internship', language)}</span>
+            <div className="flex gap-2 sm:gap-4">
+              <span className="text-muted-foreground min-w-[64px] sm:min-w-[80px] shrink-0 text-xs sm:text-sm">{language === 'zh' ? '实习经历' : 'Internship'}</span>
+              <span className="text-foreground text-xs sm:text-sm">{t('education.internship', language)}</span>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function EducationPage() {
         <div className="bg-white rounded-xl shadow-md p-4 md:p-6 mb-10">
           <p className="text-muted-foreground mb-3 font-medium">{t('education.courses', language)}</p>
           <ul className="space-y-2 pl-4 list-disc list-outside text-foreground/80">
-            {education.courses.map((course, index) => (<li key={index} className="pl-1">{course}</li>))}
+            {education.courses.map((course, index) => (<li key={index} className="pl-1 text-xs sm:text-sm">{course}</li>))}
           </ul>
         </div>
 
