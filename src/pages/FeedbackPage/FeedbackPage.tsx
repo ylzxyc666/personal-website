@@ -9,6 +9,7 @@ export default function FeedbackPage() {
   const [content, setContent] = useState('');
   const [status, setStatus] = useState<SubmitStatus>('idle');
   const [errorMsg, setErrorMsg] = useState('');
+  const [showToast, setShowToast] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,7 +28,11 @@ export default function FeedbackPage() {
 
       setStatus('success');
       setContent('');
-      setTimeout(() => setStatus('idle'), 3000);
+      setShowToast(true);
+      setTimeout(() => {
+        setShowToast(false);
+        setStatus('idle');
+      }, 2500);
     } catch (err) {
       setStatus('error');
       setErrorMsg(err instanceof Error ? err.message : '提交失败，请稍后重试');
@@ -36,6 +41,16 @@ export default function FeedbackPage() {
 
   return (
     <section className="w-full py-16 md:py-20 pt-24 md:pt-28">
+      {/* 提交成功弹出提示 */}
+      {showToast && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center pointer-events-none">
+          <div className="bg-[#0045AD] text-white px-8 py-4 rounded-xl shadow-2xl text-lg font-medium
+            animate-[toast-in_0.3s_ease-out_forwards]">
+            收到，感谢您的反馈！
+          </div>
+        </div>
+      )}
+
       <div className="max-w-3xl mx-auto px-4 md:px-6">
         <h2 className="text-xl font-semibold text-foreground mb-6">
           网站使用反馈
@@ -74,11 +89,6 @@ export default function FeedbackPage() {
               </button>
             </div>
 
-            {status === 'success' && (
-              <p className="text-sm text-green-600 font-medium">
-                反馈提交成功，感谢你的建议！
-              </p>
-            )}
             {status === 'error' && (
               <p className="text-sm text-red-600 font-medium">
                 {errorMsg}

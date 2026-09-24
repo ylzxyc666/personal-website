@@ -79,3 +79,15 @@ html {
     opacity: 1;
   }
 }
+
+/* 提交成功 toast 弹出 */
+@keyframes toast-in {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
