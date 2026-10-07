@@ -18,6 +18,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0045AD]/85 backdrop-blur-md border-b border-white/15 animate-[slide-down-in_0.75s_cubic-bezier(0.16,1,0.3,1)]">
       <div className="max-w-3xl mx-auto px-3 md:px-6 flex h-14 items-center justify-between">
         <div className="flex items-center gap-2 md:gap-3">
+          {/* 中英文切换按钮 */}
           <button
             onClick={toggleLanguage}
             className="text-[10px] md:text-xs font-medium text-white/90 hover:text-white bg-white/15 hover:bg-white/25

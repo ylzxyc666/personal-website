@@ -8,10 +8,12 @@ export default function WelcomePage() {
   const [phase, setPhase] = useState<'first' | 'second'>('first');
   const [visible, setVisible] = useState(false);
 
+  // 进入欢迎页时背景清晰（无模糊）
   useEffect(() => {
     setBlur(0);
   }, [setBlur]);
 
+  // 页面加载后淡入第一段文字
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 150);
     return () => clearTimeout(timer);
@@ -19,6 +21,7 @@ export default function WelcomePage() {
 
   const handleFirstClick = () => {
     setVisible(false);
+    // 等待淡出动画完成后切换到第二段
     setTimeout(() => {
       setPhase('second');
       setTimeout(() => setVisible(true), 60);
@@ -26,15 +29,17 @@ export default function WelcomePage() {
   };
 
   const handleSecondClick = () => {
+    // 背景开始渐变虚化（700ms过渡），同时文字淡出
     setBlur(6);
     setVisible(false);
+    // 等待文字淡出 + 部分虚化后进入主界面
     setTimeout(() => {
       navigate('/home');
     }, 550);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center select-none px-4">
+    <div className="min-h-screen flex items-center justify-center select-none">
       {phase === 'first' ? (
         <button
           onClick={handleFirstClick}

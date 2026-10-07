@@ -1,6 +1,7 @@
 import { Language } from '@/context/LanguageContext';
 
 export const translations = {
+  // 导航栏
   nav: {
     home: { zh: '首页', en: 'Home' },
     about: { zh: '关于我', en: 'About' },
@@ -8,6 +9,8 @@ export const translations = {
     contact: { zh: '联系我', en: 'Contact' },
     feedback: { zh: '使用反馈', en: 'Feedback' },
   },
+
+  // 首页
   home: {
     greeting: {
       zh: '你好，我是陈一诺（Noah）。\n欢迎来到我的数字空间。',
@@ -17,14 +20,20 @@ export const translations = {
       zh: '天津大学香港理工大学深圳未来技术学院 · 计算机科学与技术专业',
       en: 'TJU & PolyU Shenzhen Future Technology College · Computer Science and Technology',
     },
-    curryQuote: { zh: '下赛季没人想碰到我们', en: 'No one wants to play us next season' },
+    curryQuote: {
+      zh: '下赛季没人想碰到我们',
+      en: "No one wants to play us next season",
+    },
     curryAuthor: { zh: '—— Stephen Curry', en: '—— Stephen Curry' },
+    // 周杰伦歌词保留中文
     jayLyrics: {
       zh: '想吹风，想自由，想要一起手牵手，去看海，绕世界流浪',
       en: '想吹风，想自由，想要一起手牵手，去看海，绕世界流浪',
     },
     jayAuthor: { zh: '—— 周杰伦《暗号》', en: '—— Jay Chou "Coded Signal"' },
   },
+
+  // 关于我
   about: {
     title: { zh: '关于我', en: 'About Me' },
     hometown: { zh: '故乡', en: 'Hometown' },
@@ -55,6 +64,8 @@ export const translations = {
     bieberArtist: { zh: '——Justin Bieber', en: '—— Justin Bieber' },
     eminemArtist: { zh: '——Eminem', en: '—— Eminem' },
   },
+
+  // 教育与技能
   education: {
     title: { zh: '教育与技能', en: 'Education & Skills' },
     educationTitle: { zh: '教育背景', en: 'Education' },
@@ -80,6 +91,7 @@ export const translations = {
     interests: { zh: '兴趣方向', en: 'Interests' },
     aiButton: { zh: '人工智能（AI）', en: 'Artificial Intelligence (AI)' },
     codingButton: { zh: '编程开发', en: 'Programming & Development' },
+    // AI 思考
     aiTitle: { zh: '关于 AI 的思考', en: 'Thoughts on AI' },
     aiIntro1: {
       zh: '作为计算机科学与技术专业大一新生，AI 是我踏入专业后最关注的方向。',
@@ -112,6 +124,7 @@ export const translations = {
       zh: '于我而言，当下正是打牢根基的阶段。我会从数学、编程的基础出发，逐步探索 AI 的核心技术，期待未来能参与到落地型的 AI 应用中，用技术创造真实的价值。',
       en: 'For me, now is the time to build a solid foundation. Starting from math and programming basics, I will gradually explore core AI technologies, hoping to participate in practical AI applications and create real value with technology.',
     },
+    // 编程思考
     coding1: {
       zh: '作为计算机科学与技术专业的大一新生，我始终认为，编程开发是一门以逻辑为骨架、以创造为灵魂的技术，也是数字世界回应真实需求的核心载体。',
       en: 'As a freshman in Computer Science and Technology, I have always believed that programming is a technology with logic as its skeleton and creation as its soul, and the core medium through which the digital world responds to real needs.',
@@ -129,6 +142,8 @@ export const translations = {
       en: 'Essentially, programming is both rigorous rational expression and a creative process full of possibilities. It uses unified logical rules to build vastly different digital worlds, giving abstract ideas a path to reality.',
     },
   },
+
+  // 联系我
   contact: {
     title: { zh: '联系我', en: 'Contact Me' },
     tjuEmail: { zh: '天津大学邮箱', en: 'TJU Email' },
@@ -136,6 +151,8 @@ export const translations = {
     github: { zh: 'GitHub', en: 'GitHub' },
     welcomeText: { zh: '欢迎通过邮件与我交流', en: 'Feel free to reach out via email' },
   },
+
+  // 反馈
   feedback: {
     title: { zh: '网站使用反馈', en: 'Website Feedback' },
     label: { zh: '你的反馈', en: 'Your Feedback' },
@@ -148,6 +165,8 @@ export const translations = {
     submitting: { zh: '提交中...', en: 'Submitting...' },
     success: { zh: '收到，感谢您的反馈！', en: 'Received, thank you for your feedback!' },
   },
+
+  // 页脚
   footer: {
     version: { zh: '个人主页 V2', en: 'Personal Website V2' },
   },
